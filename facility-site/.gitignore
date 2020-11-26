@@ -6,7 +6,7 @@
 .pnp.js
 
 #userKey for emailjs
-./env
+/env
 
 # testing
 /coverage
