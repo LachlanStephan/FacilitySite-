@@ -2,9 +2,7 @@ import React from 'react';
 import {Container, Row, Col} from 'reactstrap';
 import emailjs from 'emailjs-com';
 
-
 export default function Contact() {
-
 
 const userKey = process.env.REACT_APP_USER_KEY;
 
@@ -70,11 +68,8 @@ const userKey = process.env.REACT_APP_USER_KEY;
                             <input type="submit" value="Submit"/>
                         </Col>
                     </Row>
-
                 </fieldset>
             </form>
         </Container>
-
     )
-    
 }

@@ -9,7 +9,6 @@ hr {
 
 /* Header and footer */
 .headerContainer, .footerContainer {
-  margin: 1em;
   padding: 1em;
 }
 
@@ -23,7 +22,6 @@ ul {
 li {
   list-style: none;
   text-decoration: none;
-  margin: 1em;
   padding: 1px;
 }
 
