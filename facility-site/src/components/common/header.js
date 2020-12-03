@@ -1,14 +1,17 @@
 import React from 'react';
 import {Container, Row, Col} from 'reactstrap';
+import CR_logo from '../../images/CR_logo.png';
+import {CardImg} from 'reactstrap';
+import Maintenance from './maintenance';
 
 function Header() {
     return (
         <Container className="headerContainer">
             <Row>
                 <Col>
-                    <h1>Facility Site</h1>
+                     <a href="./maintenance.js"><CardImg src={CR_logo} />
+                     </a>
                 </Col>
-                <hr></hr>
             </Row>
         </Container>
     )

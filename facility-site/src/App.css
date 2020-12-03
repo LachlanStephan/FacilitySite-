@@ -12,6 +12,37 @@ hr {
   padding: 1em;
 }
 
+.footerInfo {
+  display: flex;
+  justify-content: center;
+}
+
+.purpleH1 {
+  color: #800879;
+}
+
+.blueH1 {
+  color: #067ED7;
+  padding-left: 0.5em;
+}
+
+.footerInfo>p {
+  margin-top: 2.2em;
+  padding-left: 1em;
+  color: #067ED7;
+}
+
+.logoInfo {
+  height: auto;
+  width: auto;
+  display: flex;
+  justify-content: center;
+}
+
+.logoInfo>h4 {
+  padding-left: 1em;
+}
+
 /* links */
 ul {
   display: flex;
@@ -28,6 +59,19 @@ li {
 a {
   text-decoration: none;
   color: black;
+}
+
+/* Homepage/Maintenance page */
+.contactText {
+  width: 80%;
+  color: #067ED7;
+  margin: 0 auto;
+  margin-bottom: 2em;
+  margin-top: 0;
+}
+
+.maintenanceImg {
+  margin-bottom: 0;
 }
 
 /* Form */
@@ -60,7 +104,7 @@ input, textarea {
 
 input[type=submit] {
   width: 80%;
-  background-color: #4CAF50;
+  background-color: #067ED7;
   color: white;
   padding: 14px 20px;
   margin: 8px 0;
@@ -70,9 +114,17 @@ input[type=submit] {
 }
 
 input[type=submit]:hover {
-  background-color: #45a049;
+  background-color:#800879;
+  transition: 0.3s ease;
 }
 
 #msg {
   height: 5em;
+}
+
+/* Desktop view */
+@media only screen and (min-width: 600px) {
+  .maintenanceImg {
+    width: 70%;
+  }
 }

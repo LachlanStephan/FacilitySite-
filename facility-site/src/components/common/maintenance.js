@@ -1,14 +1,12 @@
 import React from 'react';
 import {Container, Row, Col} from 'reactstrap';
-import underMaintenance from '../../images/underMaintenance.jpg';
+
+import underMaintenancev2 from '../../images/underMaintenancev2.jpg';
 import {
-    Card,
-    CardImg,
-    // CardText,
-    CardBody,
+    Card, CardImg, CardText,
+    // CardBody,
     CardTitle,
-    // CardSubtitle,
-    // Button
+    // CardSubtitle, Button
 } from 'reactstrap';
 
 function Maintenance() {
@@ -17,19 +15,25 @@ function Maintenance() {
             <Row>
                 <Col>
                     <Card>
-                        <CardTitle>
-                            <p>Some text</p>
-                        </CardTitle>
                         <CardImg
+                            className="maintenanceImg"
                             top
-                            width="70%"
-                            height=""
-                            src={underMaintenance}
+                            width="100%"
+                            height="auto"
+                            src={underMaintenancev2}
                             alt="Construction worker saying the site is under maintenance"/>
-                        <CardBody></CardBody>
+                        <CardText className="contactText">
+                            <h2>
+                                <i>CareRITE Herston Lodge is building a new website so you can have a better experience when you make contact with us - in the meantime please call
+                                    <strong>
+                                        {' '}
+                                        Ann Zemo</strong>, our facility manager in relation to <strong>level 3 supported accomodation {' '}</strong>availability (or for all other enquiries) on - <br></br><br></br>(07) <strong>3257 3488</strong></i>
+                            </h2>
+                        </CardText>
                     </Card>
                 </Col>
             </Row>
+            <hr></hr>
         </Container>
 
     )
