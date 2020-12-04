@@ -2,7 +2,6 @@ import React from 'react';
 import {Container, Row, Col} from 'reactstrap';
 import CR_logo from '../../images/CR_logo.png';
 import {CardImg} from 'reactstrap';
-import Maintenance from './maintenance';
 
 function Header() {
     return (

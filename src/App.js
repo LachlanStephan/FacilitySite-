@@ -1,9 +1,9 @@
 import './App.css';
-import Maintenance from './components/common/maintenance';
+import Maintenance from './components/maintenance';
 import Header from './components/common/header';
 import {Container} from 'reactstrap';
 import Footer from './components/common/footer';
-import Contact from './components/common/contact';
+import Contact from './components/contact';
 import {BrowserRouter as Router, Switch, Route, Link} from "react-router-dom";
 
 export function Links() {
