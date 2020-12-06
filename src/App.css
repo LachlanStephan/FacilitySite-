@@ -53,12 +53,29 @@ li {
   padding: 1px;
 }
 
-a {
+.mainLinks {
   text-decoration: none;
-  color: black;
+  color: white;
+  padding: 0.5em;
+  background-color: #067ED7;
+  border-radius: 5px;
+}
+
+/* .mainLinks:hover {
+  background-color: #800879;
+  transition: background-color 0.6s ease;
+} */
+
+.mainLinks:focus, .mainLinks:hover {
+  background-color: #fed800;
+  transition: background-color 0.3s ease;
 }
 
 /* Homepage/Maintenance page */
+.maintenanceImg {
+  width: 90%;
+}
+
 .contactText {
   width: 80%;
   color: #067ED7;
@@ -122,7 +139,7 @@ input[type=submit]:hover {
 /* Desktop view */
 @media only screen and (min-width: 600px) {
   .maintenanceImg {
-    width: 70%;
+    width: auto;
   }
 
   .contactForm {

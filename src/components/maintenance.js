@@ -1,7 +1,7 @@
 import React from 'react';
 import {Container, Row, Col} from 'reactstrap';
+import underMaintenancev3 from '../images/underMaintenancev3.jpg';
 
-import underMaintenancev2 from '../images/underMaintenancev2.jpg';
 import {
     Card, CardImg, CardText,
     // CardBody,
@@ -18,9 +18,7 @@ function Maintenance() {
                         <CardImg
                             className="maintenanceImg"
                             top
-                            width="360"
-                            height="234px"
-                            src={underMaintenancev2}
+                            src={underMaintenancev3}
                             alt="Construction worker saying the site is under maintenance"/>
                         <CardText className="contactText">
                             <h2>

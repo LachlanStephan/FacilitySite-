@@ -14,10 +14,10 @@ export function Links() {
                     <nav>
                         <ul>
                             <li>
-                                <Link to="/Maintenance">Home</Link>
+                                <Link className="mainLinks" to="/Maintenance">Home</Link>
                             </li>
                             <li>
-                                <Link to="/Contact">Contact us</Link>
+                                <Link className="mainLinks" to="/Contact">Message us</Link>
                             </li>
                         </ul>
                     </nav>
