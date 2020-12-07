@@ -1,22 +1,26 @@
 import React from 'react';
 import {Container, Row, Col} from 'reactstrap';
 import emailjs from 'emailjs-com';
+// import {Alert} from 'reactstrap';
 
 export default function Contact() {
 
-const userKey = process.env.REACT_APP_USER_KEY;
+    const userKey = process.env.REACT_APP_USER_KEY;
 
     function sendEmail(e) {
         e.preventDefault();
 
-        emailjs.sendForm('service_zikleyp', 'template_sn9ldze', e.target, userKey)
-               .then((result) =>  {
+        emailjs
+            .sendForm('service_zikleyp', 'template_sn9ldze', e.target, userKey)
+            .then((result) => {
                 console.log(result.text);
-              }, (error) => {
+            }, (error) => {
                 console.log(error.text);
-              });
-                e.target.reset()
-                alert("sent!")
+            });
+        e
+            .target
+            .reset()
+            alert('Your email has been sent!')
     }
 
     return (
