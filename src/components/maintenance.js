@@ -11,7 +11,7 @@ import {
 
 function Maintenance() {
     return (
-        <Container>
+        <Container className="maintenanceContainer">
             <Row>
                 <Col>
                     <Card>

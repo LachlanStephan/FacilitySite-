@@ -12,8 +12,6 @@ hr {
   padding: 1em;
 }
 
-
-
 .purpleH1 {
   color: #800879;
 }
@@ -72,6 +70,10 @@ li {
 }
 
 /* Homepage/Maintenance page */
+.maintenanceContainer {
+  padding: 2em;
+}
+
 .maintenanceImg {
   width: 90%;
 }
@@ -114,7 +116,6 @@ input {
   box-shadow: 1px;
   box-sizing: border-box;
 }
- 
 
 input[type=submit] {
   width: 90%;
@@ -128,11 +129,11 @@ input[type=submit] {
 }
 
 input[type=submit]:hover {
-  background-color:#800879;
+  background-color:#fed800;
   transition: 0.3s ease;
 }
 
-#msg {
+#msgBox {
   height: 3em;
 }
 
@@ -141,7 +142,6 @@ input[type=submit]:hover {
   .maintenanceImg {
     width: auto;
   }
-
   .contactForm {
     width: 70%;
   }

@@ -41,13 +41,11 @@ export function Links() {
 
 function App() {
     return (
-
         <Container className="App">
             <Header/>
             <Links/>
             <Footer/>
         </Container>
-
     );
 }
 

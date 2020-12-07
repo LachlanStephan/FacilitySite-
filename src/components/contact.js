@@ -6,7 +6,6 @@ export default function Contact() {
 
 const userKey = process.env.REACT_APP_USER_KEY;
 
-
     function sendEmail(e) {
         e.preventDefault();
 
@@ -17,8 +16,8 @@ const userKey = process.env.REACT_APP_USER_KEY;
                 console.log(error.text);
               });
                 e.target.reset()
+                alert("sent!")
     }
-
 
     return (
         <Container className="contactForm">
@@ -44,7 +43,7 @@ const userKey = process.env.REACT_APP_USER_KEY;
                             <label htmlFor="message">Message</label>
                         </Col>
                         <Col>
-                            <input type="text" name="message" id="msg" />
+                            <input type="text" name="message"/>
                         </Col>
                     </Row>
                     <Row>
