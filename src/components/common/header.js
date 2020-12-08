@@ -8,8 +8,11 @@ function Header() {
         <Container className="headerContainer">
             <Row>
                 <Col>
-                     <a href="./maintenance.js"><CardImg src={CR_logo} />
-                     </a>
+                    <h1 className="purpleH1">Herston Lodge</h1>
+                </Col>
+                <Col>
+                    <a href="./maintenance.js"><CardImg src={CR_logo} />
+                    </a>
                 </Col>
             </Row>
         </Container>

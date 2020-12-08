@@ -20,7 +20,7 @@ export default function Contact() {
         e
             .target
             .reset()
-            alert('Your email has been sent!')
+        alert('Your email has been sent!')
     }
 
     return (
@@ -47,7 +47,7 @@ export default function Contact() {
                             <label htmlFor="message">Message</label>
                         </Col>
                         <Col>
-                            <input type="text" name="message"/>
+                            <input type="text" name="message" id="msgBox"/>
                         </Col>
                     </Row>
                     <Row>
