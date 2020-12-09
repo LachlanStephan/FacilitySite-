@@ -10,7 +10,7 @@ function Header() {
                 <Col className="headerCol">
                     <a href="./maintenance.js"><CardImg src={CR_logo}/></a>
                 </Col>
-                <Col>
+                <Col className="herstonHeading">
                     <h1 className="blueH1">Herston Lodge</h1>
                 </Col>
             </Row>
