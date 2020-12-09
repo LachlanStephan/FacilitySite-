@@ -11,15 +11,15 @@ const Footer = (props) => {
                 <Col className="footerHeadings">
                     <h1 className="purpleH1">Supported Accomodation</h1>
                     <h1 className="blueH1">Herston Lodge</h1>
-                    <p>
-                        Butterfield Street, Herston
+                    <p className="greyP">
+                       <strong>Butterfield Street, Herston</strong>
                     </p>
                 </Col>
             </Row>
             <Row>
                 <Col className="logoInfo">
                     <CardImg className="NDIS-logo" width="50" height="50" src={weHeartNDIS2020v3}/>
-                    <h4>Registered NDIS Provider</h4>
+                    <p>Registered NDIS Provider</p>
                     {/* <CardImg src={tagRegisteredProviderv2} /> */}
                 </Col>
             </Row>

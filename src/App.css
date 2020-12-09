@@ -37,8 +37,12 @@ hr {
   justify-content: center;
 }
 
-.logoInfo>h4 {
+.logoInfo>p {
   padding-left: 1em;
+}
+
+.greyP {
+  color: darkgrey;
 }
 
 /* links */
