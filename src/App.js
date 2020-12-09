@@ -25,10 +25,10 @@ export function Links() {
                     {/* A <Switch> looks through its children <Route>s and
             renders the first one that matches the current URL. */}
                     <Switch>
-                        <Route path="/Maintenance">
+                        <Route path="*/Maintenance">
                             <Maintenance/>
                         </Route>
-                        <Route path="/Contact">
+                        <Route path="*/Contact">
                             <Contact/>
                         </Route>
                         <Route path="*" component={Maintenance}/>

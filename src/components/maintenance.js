@@ -21,15 +21,15 @@ function Maintenance() {
                             src={underMaintenancev3}
                             alt="Construction worker saying the site is under maintenance"/>
                         <CardText className="contactText">
-                            <h2>
+                            <p>
                                 <i>CareRITE Herston Lodge is building a new website so you can have a better
-                                    experience when you make contact with us - in the meantime please call
+                                    experience when you contact us. In the meantime please call
                                     <strong>
                                         {' '}
                                         Ann Zemo</strong>, our facility manager in relation to
-                                    <strong>level 3 supported accomodation {' '}</strong>availability (or for all other enquiries) on -
+                                    <strong>{' '}level 3 supported accomodation {' '}</strong>availability (or for all other enquiries) on -
                                 </i>
-                            </h2>
+                            </p>
                         </CardText>
                     </Card>
                 </Col>
