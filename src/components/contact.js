@@ -31,7 +31,9 @@ export default function Contact() {
                             <label htmlFor="name">First name</label>
                         </Col>
                         <Col>
-                            <input type="text" name="name"/>
+                            <input type="text" name="name"
+                                placeholder="First name"
+                            />
                         </Col>
                     </Row>
                     <Row>
@@ -39,14 +41,19 @@ export default function Contact() {
                             <label htmlFor="surname">Surname</label>
                         </Col>
                         <Col>
-                            <input type="text" name="surname"/></Col>
+                            <input type="text" name="surname"
+                                placeholder="Surname"
+                            />
+                        </Col>
                     </Row>
                     <Row>
                         <Col>
                             <label htmlFor="message">Message</label>
                         </Col>
                         <Col>
-                            <input type="text" name="message" id="msgBox"/>
+                            <input type="text" name="message" id="msgBox"
+                                placeholder="Your message"
+                            />
                         </Col>
                     </Row>
                     <Row>
@@ -54,7 +61,9 @@ export default function Contact() {
                             <label htmlFor="email">Email</label>
                         </Col>
                         <Col>
-                            <input type="email" name="email"/>
+                            <input type="email" name="email"
+                                placeholder="hello@gmail.com"
+                            />
                         </Col>
                     </Row>
                     <Row>
@@ -62,7 +71,9 @@ export default function Contact() {
                             <label htmlFor="number">Ph-number</label>
                         </Col>
                         <Col>
-                            <input type="tel" name="number"/>
+                            <input type="tel" name="number"
+                                placeholder="0123 456 789"
+                            />
                         </Col>
                     </Row>
                     <Row>
