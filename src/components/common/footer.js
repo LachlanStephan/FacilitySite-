@@ -12,7 +12,7 @@ const Footer = (props) => {
                     <h1 className="purpleH1">Supported Accomodation</h1>
                     <h1 className="blueH1">Herston Lodge</h1>
                     <p>
-                        <strong>Butterfield Street, Herston</strong>
+                        Butterfield Street, Herston
                     </p>
                 </Col>
             </Row>

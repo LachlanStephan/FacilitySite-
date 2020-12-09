@@ -22,13 +22,21 @@ function Maintenance() {
                             alt="Construction worker saying the site is under maintenance"/>
                         <CardText className="contactText">
                             <h2>
-                                <i>CareRITE Herston Lodge is building a new website so you can have a better experience when you make contact with us - in the meantime please call
+                                <i>CareRITE Herston Lodge is building a new website so you can have a better
+                                    experience when you make contact with us - in the meantime please call
                                     <strong>
                                         {' '}
-                                        Ann Zemo</strong>, our facility manager in relation to <strong>level 3 supported accomodation {' '}</strong>availability (or for all other enquiries) on - <br></br><br></br>(07) <strong>3257 3488</strong></i>
+                                        Ann Zemo</strong>, our facility manager in relation to
+                                    <strong>level 3 supported accomodation {' '}</strong>availability (or for all other enquiries) on -
+                                </i>
                             </h2>
                         </CardText>
                     </Card>
+                </Col>
+                <Col>
+                    <h1 className="blueH1">
+                        <strong>(07) {' '}3257 3488</strong>
+                    </h1>
                 </Col>
             </Row>
             <hr></hr>

@@ -9,7 +9,7 @@ hr {
 
 /* Header and footer */
 .headerContainer, .footerContainer {
-  padding: 2em;
+  padding: 1em;
 }
 
 .headerCol {
@@ -161,7 +161,7 @@ input[type=submit]:hover {
     justify-content: center;
   } 
   .footerHeadings p {
-    margin-top: 2.2em;
+    margin-top: 2.3em;
     margin-left: 1em;
   }
   .headerContainer>.row {
