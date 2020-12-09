@@ -9,7 +9,7 @@ hr {
 
 /* Header and footer */
 .headerContainer, .footerContainer {
-  padding: 1em;
+  padding: 2em;
 }
 
 .headerCol {
@@ -167,9 +167,6 @@ input[type=submit]:hover {
   .headerContainer>.row {
     display: flex;
     justify-content: center;
-  }
-  .headerContainer, .footerContainer {
-    padding: 1px;
   }
 
   /* Links */
