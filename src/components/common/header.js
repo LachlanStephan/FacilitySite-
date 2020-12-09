@@ -7,12 +7,11 @@ function Header() {
     return (
         <Container className="headerContainer">
             <Row>
-                <Col>
-                    <h1 className="purpleH1">Herston Lodge</h1>
+                <Col className="headerCol">
+                    <a href="./maintenance.js"><CardImg src={CR_logo}/></a>
                 </Col>
                 <Col>
-                    <a href="./maintenance.js"><CardImg src={CR_logo} />
-                    </a>
+                    <h1 className="blueH1">Herston Lodge</h1>
                 </Col>
             </Row>
         </Container>

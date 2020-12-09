@@ -11,7 +11,7 @@ export function Links() {
         <Container>
             <Router>
                 <div>
-                    <nav>
+                    <nav className="linksContainer">
                         <ul>
                             <li>
                                 <Link className="mainLinks" to="/Maintenance">Home</Link>

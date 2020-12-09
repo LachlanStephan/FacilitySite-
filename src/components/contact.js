@@ -9,9 +9,8 @@ export default function Contact() {
 
     function sendEmail(e) {
         e.preventDefault();
-
-        emailjs
-            .sendForm('service_zikleyp', 'template_sn9ldze', e.target, userKey)
+        emailjs 
+            .sendForm('service_hdry2ur', 'template_zfz768t', e.target, userKey)
             .then((result) => {
                 console.log(result.text);
             }, (error) => {
