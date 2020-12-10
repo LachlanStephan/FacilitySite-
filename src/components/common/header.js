@@ -8,7 +8,7 @@ function Header() {
         <Container className="headerContainer">
             <Row>
                 <Col className="headerCol">
-                    <a href="./maintenance.js"><CardImg src={CR_logo}/></a>
+                    <CardImg src={CR_logo}/>
                 </Col>
                 <Col className="herstonHeading">
                     <h1 className="blueH1">Herston Lodge</h1>
