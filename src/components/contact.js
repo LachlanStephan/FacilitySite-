@@ -3,14 +3,12 @@ import {Container, Row, Col} from 'reactstrap';
 import emailjs from 'emailjs-com';
 // import {Alert} from 'reactstrap';
 
-export default function Contact() {
-
-    const userKey = process.env.REACT_APP_USER_KEY;
+export default function contact() {
 
     function sendEmail(e) {
         e.preventDefault();
         emailjs 
-            .sendForm('service_hdry2ur', 'template_zfz768t', e.target, userKey)
+            .sendForm('service_hdry2ur', 'template_zfz768t', e.target, 'user_Bul2LW1taxynaEHzyamK0')
             .then((result) => {
                 console.log(result.text);
             }, (error) => {

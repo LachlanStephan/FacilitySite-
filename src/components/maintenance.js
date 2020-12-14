@@ -9,7 +9,7 @@ import {
     // CardSubtitle, Button
 } from 'reactstrap';
 
-function Maintenance() {
+function maintenance() {
     return (
         <Container className="maintenanceContainer">
             <Row>
@@ -46,4 +46,4 @@ function Maintenance() {
 
 }
 
-export default Maintenance;
+export default maintenance;

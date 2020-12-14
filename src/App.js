@@ -5,6 +5,7 @@ import {Container} from 'reactstrap';
 import Footer from './components/common/footer';
 import Contact from './components/contact';
 import {BrowserRouter as Router, Switch, Route, Link} from "react-router-dom";
+import { Redirect } from 'react-router-dom/cjs/react-router-dom.min';
 
 export function Links() {
     return (
@@ -14,10 +15,10 @@ export function Links() {
                     <nav className="linksContainer">
                         <ul>
                             <li>
-                                <Link className="mainLinks" to="/Maintenance">Home</Link>
+                                <Link className="mainLinks" to="/maintenance">Home</Link>
                             </li>
                             <li>
-                                <Link className="mainLinks" to="/Contact">Message us</Link>
+                                <Link className="mainLinks" to="/contact">Message us</Link>
                             </li>
                         </ul>
                     </nav>
@@ -25,13 +26,13 @@ export function Links() {
                     {/* A <Switch> looks through its children <Route>s and
             renders the first one that matches the current URL. */}
                     <Switch>
-                        <Route path="*/Maintenance">
+                        <Route exact path="*/maintenance">
                             <Maintenance/>
                         </Route>
-                        <Route path="*/Contact">
+                        <Route exact path="*/contact">
                             <Contact/>
                         </Route>
-                        <Route path="*" component={Maintenance}/>
+                        <Redirect from='*' to='maintenance'/>
                     </Switch>
                 </div>
             </Router>
