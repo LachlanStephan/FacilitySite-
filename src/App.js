@@ -5,7 +5,7 @@ import {Container} from 'reactstrap';
 import Footer from './components/common/footer';
 import Contact from './components/contact';
 import {BrowserRouter as Router, Switch, Route, Link} from "react-router-dom";
-import { Redirect } from 'react-router-dom/cjs/react-router-dom.min';
+import {Redirect} from 'react-router-dom/cjs/react-router-dom.min';
 
 export function Links() {
     return (
@@ -27,12 +27,12 @@ export function Links() {
             renders the first one that matches the current URL. */}
                     <Switch>
                         <Route exact path="*/maintenance">
-                            <Maintenance/>
+                            <Maintenance />
                         </Route>
                         <Route exact path="*/contact">
-                            <Contact/>
+                            <Contact />
                         </Route>
-                        <Redirect from='*' to='maintenance'/>
+                        <Redirect from='*' to='maintenance' />
                     </Switch>
                 </div>
             </Router>
@@ -43,9 +43,9 @@ export function Links() {
 function App() {
     return (
         <Container className="App">
-            <Header/>
-            <Links/>
-            <Footer/>
+            <Header />
+            <Links />
+            <Footer />
         </Container>
     );
 }
