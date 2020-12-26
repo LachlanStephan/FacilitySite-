@@ -125,7 +125,8 @@ fieldset {
   border: none;
 }
 
-input {
+input,
+textarea {
   width: 100%;
   margin: 1em;
   height: 2em;
@@ -150,9 +151,16 @@ input[type=submit]:hover {
   transition: 0.4s ease;
 }
 
-/* #msgBox {
-  height: 3em;
-} */
+/* From errors */
+#nameError, 
+#surnameError,
+#msgError, 
+#emailError,
+#numberError {
+  display: none;
+  margin-bottom: 2em;
+  color: #800879;
+}
 
 /* Desktop view */
 @media only screen and (min-width: 600px) {

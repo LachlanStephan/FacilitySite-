@@ -1,86 +1,114 @@
-import React from 'react';
-import {Container, Row, Col} from 'reactstrap';
-import emailjs from 'emailjs-com';
-// import {Alert} from 'reactstrap';
+import React from "react";
+import { Container, Row, Col } from "reactstrap";
+import sendEmail from "./common/sendEmail";
+import nameError from "./common/errorFunctions/nameError";
+import surnameError from "./common/errorFunctions/surnameError";
+import messageError from "./common/errorFunctions/messageError";
+import emailError from "./common/errorFunctions/emailError";
+import numberError from "./common/errorFunctions/numberError";
 
 export default function contact() {
-
-    function sendEmail(e) {
-        e.preventDefault();
-        emailjs 
-            .sendForm('service_hdry2ur', 'template_zfz768t', e.target, 'user_Bul2LW1taxynaEHzyamK0')
-            .then((result) => {
-                console.log(result.text);
-            }, (error) => {
-                console.log(error.text);
-            });
-        e
-            .target
-            .reset()
-        alert('Your email has been sent!')
-    }
-
-    return (
-        <Container className="contactForm">
-            <form onSubmit={sendEmail} noValidate={true}>
-                <fieldset>
-                    <Row>
-                        <Col>
-                            <label htmlFor="name">First name</label>
-                        </Col>
-                        <Col>
-                            <input type="text" name="name"
-                                placeholder="First name"
-                            />
-                        </Col>
-                    </Row>
-                    <Row>
-                        <Col>
-                            <label htmlFor="surname">Surname</label>
-                        </Col>
-                        <Col>
-                            <input type="text" name="surname"
-                                placeholder="Surname"
-                            />
-                        </Col>
-                    </Row>
-                    <Row>
-                        <Col>
-                            <label htmlFor="message">Message</label>
-                        </Col>
-                        <Col>
-                            <input type="text" name="message" id="msgBox"
-                                placeholder="Your message"
-                            />
-                        </Col>
-                    </Row>
-                    <Row>
-                        <Col>
-                            <label htmlFor="email">Email</label>
-                        </Col>
-                        <Col>
-                            <input type="email" name="email"
-                                placeholder="hello@gmail.com"
-                            />
-                        </Col>
-                    </Row>
-                    <Row>
-                        <Col>
-                            <label htmlFor="number">Ph-number</label>
-                        </Col>
-                        <Col>
-                            <input type="tel" name="number"
-                                placeholder="0123 456 789"
-                            />
-                        </Col>
-                    </Row>
-                    <Row>
-                        <Col>
-                            <input type="submit" value="Submit"/>
-                        </Col>
-                    </Row>
-                </fieldset>
-            </form>
-        </Container>
-    )
+  return (
+    <Container className="contactForm">
+      <form onSubmit={sendEmail}>
+        <fieldset>
+          <Row>
+            <Col>
+              <label htmlFor="name">First name</label>
+            </Col>
+            <Col>
+              <input
+                type="text"
+                name="name"
+                placeholder="First name"
+                required={true}
+                onChange={nameError}
+                id="name"
+              />
+            </Col>
+            <Col className="errorCol">
+              <p id="nameError">Please enter your first name</p>
+            </Col>
+          </Row>
+          <Row>
+            <Col>
+              <label htmlFor="surname">Surname</label>
+            </Col>
+            <Col>
+              <input
+                type="text"
+                name="surname"
+                placeholder="Surname"
+                required={true}
+                onChange={surnameError}
+                id="surname"
+              />
+            </Col>
+            <Col className="errorCol">
+              <p id="surnameError">Please enter your surname</p>
+            </Col>
+          </Row>
+          <Row>
+            <Col>
+              <label htmlFor="message">Message</label>
+            </Col>
+            <Col>
+              <textarea
+                type="text"
+                name="message"
+                id="msg"
+                placeholder="Your message"
+                required={true}
+                onChange={messageError}
+              />
+            </Col>
+            <Col className="errorCol">
+              <p id="msgError">Please leave a message</p>
+            </Col>
+          </Row>
+          <Row>
+            <Col>
+              <label htmlFor="email">Email</label>
+            </Col>
+            <Col>
+              <input
+                type="email"
+                name="email"
+                placeholder="hello@gmail.com"
+                required={true}
+                onChange={emailError}
+                id="email"
+              />
+            </Col>
+            <Col className="errorCol">
+              <p id="emailError">Please enter a valid email</p>
+            </Col>
+          </Row>
+          <Row>
+            <Col>
+              <label htmlFor="number">Ph-number</label>
+            </Col>
+            <Col>
+              <input
+                type="tel"
+                name="number"
+                placeholder="0123 456 789"
+                required={true}
+                onChange={numberError}
+                id="number"
+              />
+            </Col>
+            <Col className="errorCol">
+              <p id="numberError">Please enter a valid number</p>
+            </Col>
+          </Row>
+          <Row>
+            <Col>
+              <input type="submit" value="Submit" />
+            </Col>
+          </Row>
+        </fieldset>
+      </form>
+    </Container>
+  );
 }
