@@ -43,8 +43,12 @@ export function Links() {
 function App() {
     return (
         <Container className="App">
-            <Header/>
-            <Links/>
+            <Header
+                title="Herston Lodge"
+            />
+            <Links 
+                
+            />
             <Footer/>
         </Container>
     );
