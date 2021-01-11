@@ -136,6 +136,10 @@ textarea {
   box-sizing: border-box;
 }
 
+textarea {
+  height: 3em;
+}
+
 input[type=submit] {
   width: 100%;
   height: 3em;
@@ -159,7 +163,7 @@ input[type=submit]:hover {
 #numberError {
   display: none;
   margin-bottom: 2em;
-  color: #800879;
+  color: #f30e21;
 }
 
 /* Desktop view */
@@ -172,11 +176,15 @@ input[type=submit]:hover {
 
   /* Contact page */
   .contactForm {
-    width: 70%;
+    width: 50%;
   }
   input {
-    height: 1.5em;
+    height: 2.5em;
   }
+  textarea {
+    height: 4em;
+  }
+
 
   /* Footer & header */
   .footerHeadings {

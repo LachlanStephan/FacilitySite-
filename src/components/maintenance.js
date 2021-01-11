@@ -3,10 +3,9 @@ import {Container, Row, Col} from 'reactstrap';
 import underMaintenancev3 from '../images/underMaintenancev3.jpg';
 
 import {
-    Card, CardImg, CardText,
-    // CardBody,
-    CardTitle,
-    // CardSubtitle, Button
+    Card,
+    CardImg,
+    CardText,
 } from 'reactstrap';
 
 function maintenance() {

@@ -14,7 +14,7 @@ export default function contact() {
         <fieldset>
           <Row>
             <Col>
-              <label htmlFor="name">First name</label>
+              {/* <label htmlFor="name">First name</label> */}
             </Col>
             <Col>
               <input
@@ -32,7 +32,7 @@ export default function contact() {
           </Row>
           <Row>
             <Col>
-              <label htmlFor="surname">Surname</label>
+              {/* <label htmlFor="surname">Surname</label> */}
             </Col>
             <Col>
               <input
@@ -50,7 +50,7 @@ export default function contact() {
           </Row>
           <Row>
             <Col>
-              <label htmlFor="message">Message</label>
+              {/* <label htmlFor="message">Message</label> */}
             </Col>
             <Col>
               <textarea
@@ -68,7 +68,7 @@ export default function contact() {
           </Row>
           <Row>
             <Col>
-              <label htmlFor="email">Email</label>
+              {/* <label htmlFor="email">Email</label> */}
             </Col>
             <Col>
               <input
@@ -86,7 +86,7 @@ export default function contact() {
           </Row>
           <Row>
             <Col>
-              <label htmlFor="number">Ph-number</label>
+              {/* <label htmlFor="number">Ph-number</label> */}
             </Col>
             <Col>
               <input
