@@ -63,7 +63,7 @@ const Contact = () => {
         <fieldset>
           <Row>
             <Col>
-              <label htmlFor="name">First name</label>
+              {/* <label htmlFor="name">First name</label> */}
             </Col>
             <Col>
               <input
@@ -75,7 +75,7 @@ const Contact = () => {
                 value={formik.values.name}
                 placeholder="First name"
               />
-              <Col className="errorCols">
+              <Col className="errorCols" style={{ color: "red" }}>
                 {formik.errors.name ? <div>{formik.errors.name}</div> : null}
               </Col>
             </Col>
@@ -83,7 +83,7 @@ const Contact = () => {
           </Row>
           <Row>
             <Col>
-              <label htmlFor="surname">Surname</label>
+              {/* <label htmlFor="surname">Surname</label> */}
             </Col>
             <Col>
               <input
@@ -95,7 +95,7 @@ const Contact = () => {
                 value={formik.values.surname}
                 placeholder="Surname"
               />
-              <Col className="errorCols">
+              <Col className="errorCols" style={{ color: "red" }}>
                 {formik.errors.surname ? (
                   <div>{formik.errors.surname}</div>
                 ) : null}
@@ -104,7 +104,7 @@ const Contact = () => {
           </Row>
           <Row>
             <Col>
-              <label htmlFor="message">Message</label>
+              {/* <label htmlFor="message">Message</label> */}
             </Col>
             <Col>
               <input
@@ -116,7 +116,7 @@ const Contact = () => {
                 value={formik.values.message}
                 placeholder="Your message"
               />
-              <Col className="errorCols">
+              <Col className="errorCols" style={{ color: "red" }}>
                 {formik.errors.message ? (
                   <div>{formik.errors.message}</div>
                 ) : null}
@@ -125,7 +125,7 @@ const Contact = () => {
           </Row>
           <Row>
             <Col>
-              <label htmlFor="email">Email</label>
+              {/* <label htmlFor="email">Email</label> */}
             </Col>
             <Col>
               <input
@@ -137,14 +137,14 @@ const Contact = () => {
                 value={formik.values.email}
                 placeholder="hello@gmail.com"
               />
-              <Col className="errorCols">
+              <Col className="errorCols" style={{ color: "red" }}>
                 {formik.errors.email ? <div>{formik.errors.email}</div> : null}
               </Col>
             </Col>
           </Row>
           <Row>
             <Col>
-              <label htmlFor="number">Ph-number</label>
+              {/* <label htmlFor="number">Ph-number</label> */}
             </Col>
             <Col>
               <input
@@ -156,7 +156,7 @@ const Contact = () => {
                 value={formik.values.number}
                 placeholder="0123 456 789"
               />
-              <Col className="errorCols">
+              <Col className="errorCols" style={{ color: "red" }}>
                 {formik.errors.number ? (
                   <div>{formik.errors.number}</div>
                 ) : null}

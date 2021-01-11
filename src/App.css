@@ -168,10 +168,10 @@ input {
 
   /* Contact page */
   .contactForm {
-    width: 70%;
+    width: 50%;
   }
   input {
-    height: 1.5em;
+    height: 2.5em;
   }
 
   /* Footer & header */
