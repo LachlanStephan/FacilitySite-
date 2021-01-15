@@ -9,6 +9,25 @@
 #purple {
   color: #800879;
 }
+/* Back to top btn */
+#btn {
+  display: none;
+  justify-content: center;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  border: none;
+  outline: none;
+  background-color: rgb(32, 43, 43);
+  color: white;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 13px;
+  opacity: 60%;
+  width: 5em;
+}
 
 html {
   scroll-behavior: smooth;

@@ -7,11 +7,6 @@ import {
   Nav,
   NavItem,
   NavLink,
-  UncontrolledDropdown,
-  DropdownToggle,
-  DropdownMenu,
-  DropdownItem,
-  NavbarText,
   Container,
   Row,
   Col,
@@ -31,7 +26,7 @@ const Header = (props) => {
     <Container style={{ marginBottom: "5em", marginTop: "1em" }} id="header">
       <Row>
         <Col>
-          <Navbar color="light" light expand="md" style={navStyle}>
+          <Navbar color="" light expand="md" style={navStyle}>
             <NavbarBrand href="/" id="blue">
               <img src={CR_logo} />
             </NavbarBrand>

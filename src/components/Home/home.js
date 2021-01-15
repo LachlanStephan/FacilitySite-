@@ -10,9 +10,9 @@ const home = (props) => {
     <Container className="homeContainer" style={homeStlye}>
       <Row>
         <Col>
-          <h1 className="blueH1">
-            <strong>(07) 3257 3488</strong>
-          </h1>
+          <h1 id="blue">Herston Lodge</h1>
+
+          <strong>(07) 3257 3488</strong>
         </Col>
       </Row>
     </Container>

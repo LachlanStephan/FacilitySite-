@@ -31,11 +31,12 @@ const contact = (props) => {
     width: "100%",
     border: "0.1px solid #a9a9a9",
     textAlign: "center",
+    borderRadius: "5px",
   };
 
   return (
     <Container className="contactContainer" id="contact" style={contactStyle}>
-      <h1 id="blue">{props.message}</h1>
+      <h1 id="blue">{props.title}</h1>
       <form style={formStyle} className="contactForm" onSubmit={sendEmail}>
         <fieldset>
           <Row>
