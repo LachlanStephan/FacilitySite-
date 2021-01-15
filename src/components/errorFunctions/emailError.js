@@ -9,4 +9,9 @@ export default function emailError() {
   } else {
     emailError.style.display = "block";
   }
+  if (emailError.style.display === "none") {
+    email.style.border = "2px solid #76EE00";
+  } else {
+    email.style.border = "2px solid red";
+  }
 }

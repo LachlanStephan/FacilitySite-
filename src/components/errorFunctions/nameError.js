@@ -9,4 +9,9 @@ export default function nameError() {
   } else {
     nameError.style.display = "none";
   }
+  if (nameError.style.display === "none") {
+    name.style.border = "2px solid #76EE00";
+  } else {
+    name.style.border = "2px solid red";
+  }
 }

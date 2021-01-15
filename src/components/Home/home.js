@@ -1,12 +1,13 @@
 import React from "react";
 import { Container, Row, Col } from "reactstrap";
-// import underMaintenancev3 from "../images/underMaintenancev3.jpg";
-
-import { Card, CardImg, CardText } from "reactstrap";
 
 const home = (props) => {
+  const homeStlye = {
+    height: "100vh",
+  };
+
   return (
-    <Container className="homeContainer">
+    <Container className="homeContainer" style={homeStlye}>
       <Row>
         <Col>
           <h1 className="blueH1">

@@ -1,30 +1,30 @@
 import React from "react";
 import { Container, Row, Col } from "reactstrap";
-import { CardImg } from "reactstrap";
-// import weHeartNDIS2020v3 from "../images/weHeartNDIS2020v3";
+import weHeartNDIS2020v3 from "../images/weHeartNDIS2020v3.jpg";
+import tagRegisteredProviderv2 from "../images/tagRegisteredProviderv2.jpg";
 
 const Footer = (props) => {
   return (
     <Container className="footerContainer">
       <Row>
-        <Col className="footerHeadings">
-          <h1 className="purpleH1">Supported Accomodation</h1>
-          <h1 className="blueH1">Herston Lodge</h1>
-          <p className="greyP">
-            <strong>Butterfield Street, Herston</strong>
-          </p>
+        <Col sm="12" lg="4">
+          <h3 id="purple">{props.title}</h3>
+        </Col>
+        <Col sm="12" lg="4">
+          <h3 id="blue">{props.title2}</h3>
+        </Col>
+        <Col sm="12" lg="4">
+          <h6 style={{ color: "#a9a9a9", marginTop: "8px" }}>
+            <strong>{props.address}</strong>
+          </h6>
         </Col>
       </Row>
-      <Row>
-        <Col className="logoInfo">
-          <CardImg
-            className="NDIS-logo"
-            width="50"
-            height="50"
-            // src={weHeartNDIS2020v3}
-          />
-          <p>Registered NDIS Provider</p>
-          {/* <CardImg src={tagRegisteredProviderv2} /> */}
+      <Row style={{ marginTop: "4em", marginBottom: "4em" }}>
+        <Col style={{ marginLeft: "2.5em" }}>
+          <img src={weHeartNDIS2020v3} />
+        </Col>
+        <Col style={{ marginRight: "2.5em" }}>
+          <img src={tagRegisteredProviderv2} />
         </Col>
       </Row>
     </Container>

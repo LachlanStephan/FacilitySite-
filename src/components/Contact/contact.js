@@ -6,6 +6,7 @@ import surnameError from "../errorFunctions/surnameError";
 import messageError from "../errorFunctions/messageError";
 import emailError from "../errorFunctions/emailError";
 import numberError from "../errorFunctions/numberError";
+import "./Contact.css";
 
 const contact = (props) => {
   const errorStyle = {
@@ -18,26 +19,33 @@ const contact = (props) => {
     width: "100%",
   };
 
+  const contactStyle = {
+    minHeight: "100vh",
+    paddingTop: "5em",
+    paddingBottom: "5em",
+  };
+
   const inputStyle = {
     marginTop: "1em",
-    height: "4em",
+    height: "3em",
     width: "100%",
+    border: "0.1px solid #a9a9a9",
+    textAlign: "center",
   };
 
   return (
-    <Container className="contactContainer" id="contact">
-      <h1 className="blueH1">{props.message}</h1>
+    <Container className="contactContainer" id="contact" style={contactStyle}>
+      <h1 id="blue">{props.message}</h1>
       <form style={formStyle} className="contactForm" onSubmit={sendEmail}>
         <fieldset>
           <Row>
-            {/* <Col>{/* <label htmlFor="name">First name</label> </Col> */}
             <Col>
               <input
                 type="text"
                 name="name"
                 placeholder="First name"
                 required={true}
-                onChange={nameError}
+                onBlur={nameError}
                 id="name"
                 style={inputStyle}
               />
@@ -51,14 +59,13 @@ const contact = (props) => {
             </Col>
           </Row>
           <Row>
-            {/* <Col><label htmlFor="surname">Surname</label></Col> */}
             <Col>
               <input
                 type="text"
                 name="surname"
                 placeholder="Surname"
                 required={true}
-                onChange={surnameError}
+                onBlur={surnameError}
                 id="surname"
                 style={inputStyle}
               />
@@ -72,15 +79,14 @@ const contact = (props) => {
             </Col>
           </Row>
           <Row>
-            {/* <Col><label htmlFor="message">Message</label></Col> */}
             <Col>
               <textarea
+                id="txtArea"
                 type="text"
                 name="message"
-                id="msg"
                 placeholder="Your message"
                 required={true}
-                onChange={messageError}
+                onBlur={messageError}
                 style={inputStyle}
               />
             </Col>
@@ -93,14 +99,13 @@ const contact = (props) => {
             </Col>
           </Row>
           <Row>
-            {/* <Col><label htmlFor="email">Email</label></Col> */}
             <Col>
               <input
                 type="email"
                 name="email"
                 placeholder="hello@gmail.com"
                 required={true}
-                onChange={emailError}
+                onBlur={emailError}
                 id="email"
                 style={inputStyle}
               />
@@ -114,14 +119,13 @@ const contact = (props) => {
             </Col>
           </Row>
           <Row>
-            {/* <Col><label htmlFor="number">Ph-number</label></Col> */}
             <Col>
               <input
                 type="tel"
                 name="number"
                 placeholder="0123 456 789"
                 required={true}
-                onChange={numberError}
+                onBlur={numberError}
                 id="number"
                 style={inputStyle}
               />
@@ -136,7 +140,7 @@ const contact = (props) => {
           </Row>
           <Row>
             <Col>
-              <input type="submit" value="Submit" />
+              <input type="submit" value="Submit" style={inputStyle} />
             </Col>
           </Row>
         </fieldset>

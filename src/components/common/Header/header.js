@@ -1,36 +1,3 @@
-// import React from "react";
-// import { Container, Row, Col } from "reactstrap";
-// import CR_logo from "../../images/CR_logo.png";
-// import { CardImg } from "reactstrap";
-
-// const Header = (props) => {
-//   return (
-//     <Container className="headerContainer" id="header">
-//       <Row>
-//         <Col className="headerCol">
-//           <a href="/header">
-//             <CardImg src={CR_logo} />
-//           </a>
-//         </Col>
-//         <Col className="herstonHeading">
-//           <h1 className="blueH1">{props.title}</h1>
-//         </Col>
-//       </Row>
-//       <Row>
-//         <Col>
-//           <a className="links" href="#header">
-//             Home
-//           </a>
-//           <a className="links" href="#contact">
-//             Message us
-//           </a>
-//         </Col>
-//       </Row>
-//     </Container>
-//   );
-// };
-// export default Header;
-
 import React, { useState } from "react";
 import {
   Collapse,
@@ -49,42 +16,42 @@ import {
   Row,
   Col,
 } from "reactstrap";
+import CR_logo from "../images/CR_logo.png";
 
 const Header = (props) => {
+  const navStyle = {
+    height: "auto",
+    textAlign: "center",
+  };
+
   const [isOpen, setIsOpen] = useState(false);
 
   const toggle = () => setIsOpen(!isOpen);
   return (
-    <Container>
-      <Row></Row>
+    <Container style={{ marginBottom: "5em", marginTop: "1em" }} id="header">
       <Row>
         <Col>
-          <Navbar color="light" light expand="md">
-            <NavbarBrand href="/">reactstrap</NavbarBrand>
-            <NavbarToggler onClick={toggle} />
+          <Navbar color="light" light expand="md" style={navStyle}>
+            <NavbarBrand href="/" id="blue">
+              <img src={CR_logo} />
+            </NavbarBrand>
+            <NavbarToggler
+              onClick={toggle}
+              style={{ border: "1px solid #ccc" }}
+            />
             <Collapse isOpen={isOpen} navbar>
               <Nav className="mr-auto" navbar>
                 <NavItem>
-                  <NavLink href="/components/">Components</NavLink>
-                </NavItem>
-                <NavItem>
-                  <NavLink href="https://github.com/reactstrap/reactstrap">
-                    GitHub
+                  <NavLink href="#contact">
+                    <strong>Message us</strong>
                   </NavLink>
                 </NavItem>
-                <UncontrolledDropdown nav inNavbar>
-                  <DropdownToggle nav caret>
-                    Options
-                  </DropdownToggle>
-                  <DropdownMenu right>
-                    <DropdownItem>Option 1</DropdownItem>
-                    <DropdownItem>Option 2</DropdownItem>
-                    <DropdownItem divider />
-                    <DropdownItem>Reset</DropdownItem>
-                  </DropdownMenu>
-                </UncontrolledDropdown>
+                <NavItem>
+                  <NavLink href="">
+                    <strong>PDF</strong>
+                  </NavLink>
+                </NavItem>
               </Nav>
-              <NavbarText>Simple Text</NavbarText>
             </Collapse>
           </Navbar>
         </Col>
