@@ -42,7 +42,7 @@ const Header = (props) => {
                   </NavLink>
                 </NavItem>
                 <NavItem>
-                  <NavLink href="">
+                  <NavLink href="#pdf">
                     <strong>PDF</strong>
                   </NavLink>
                 </NavItem>

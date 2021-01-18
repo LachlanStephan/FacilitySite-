@@ -5,13 +5,16 @@ import { Container } from "reactstrap";
 import Footer from "./components/common/Footer/footer";
 import Contact from "./components/Contact/contact";
 import ScrollToTop from "./components/common/ScrollToTop/ScrollToTop";
+import PDF_viewer from "./components/PDF-viewer/PDF-viewer";
+// import PDF from "./components/PDF-viewer/PDF";
 
 function App() {
   return (
     <Container className="App">
-      <Header title="Herston Lodge" />
-      <Home />
+      <Header />
+      <Home title="Herston Lodge" />
       <Contact title="Message us" />
+      <PDF_viewer title="Herston Lodge screening tool" />
       <ScrollToTop />
       <Footer
         title="Supported Accomodaton"

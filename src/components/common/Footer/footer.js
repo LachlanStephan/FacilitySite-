@@ -5,7 +5,7 @@ import weHeartNDIS2020v3 from "../images/weHeartNDIS2020v3.jpg";
 
 const Footer = (props) => {
   return (
-    <Container className="footerContainer">
+    <Container className="footerContainer" style={{ marginTop: "2em" }}>
       <Row>
         <Col sm="12">
           <h3 id="purple">{props.title}</h3>
@@ -20,7 +20,7 @@ const Footer = (props) => {
         </Col>
       </Row>
       <Row style={{ marginTop: "4em", marginBottom: "4em" }}>
-        <Col style={{ marginLeft: "2.5em" }}>
+        <Col>
           <img src={weHeartNDIS2020v3} style={{ padding: "0.5em" }} />
           <p>{props.ndisTag}</p>
         </Col>

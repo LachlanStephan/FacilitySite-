@@ -1,5 +1,7 @@
 import react, { useState } from "react";
 import { Button } from "reactstrap";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faArrowAltCircleUp } from "@fortawesome/free-solid-svg-icons";
 
 const ScrollToTop = () => {
   const [showScroll, setShowScroll] = useState(false);
@@ -22,7 +24,7 @@ const ScrollToTop = () => {
       id="btn"
       style={{ display: showScroll ? "flex" : "none" }}
     >
-      ^
+      <FontAwesomeIcon icon={faArrowAltCircleUp} />
     </Button>
   );
 };
