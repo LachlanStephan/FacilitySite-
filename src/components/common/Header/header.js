@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import "./header.css";
 import {
   Collapse,
   Navbar,
@@ -31,6 +32,7 @@ const Header = (props) => {
               <img src={CR_logo} />
             </NavbarBrand>
             <NavbarToggler
+              id="navToggle"
               onClick={toggle}
               style={{ border: "1px solid #ccc" }}
             />

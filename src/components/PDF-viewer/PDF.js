@@ -1,19 +1,15 @@
 import React, { Component } from "react";
-import H_L_PDF_V2 from "../common/images/H_L_PDF_V2.jpg";
+import H_L_PDF_V3 from "../common/images/H_L_PDF_V3.jpg";
 import { Container, Row, Col } from "reactstrap";
 import { CardImg } from "reactstrap";
 
-export default class extends Component {
+export default class Pdf extends Component {
   render() {
-    const pdfContainer = {
-      minHeight: "100vh",
-    };
-
     return (
-      <Container style={pdfContainer}>
+      <Container>
         <Row>
           <Col>
-            <CardImg src={H_L_PDF_V2} alt="Herston Lodge screening tool" />
+            <CardImg src={H_L_PDF_V3} alt="Herston Lodge screening tool" />
           </Col>
         </Row>
       </Container>

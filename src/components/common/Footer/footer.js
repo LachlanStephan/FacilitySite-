@@ -21,7 +21,11 @@ const Footer = (props) => {
       </Row>
       <Row style={{ marginTop: "4em", marginBottom: "4em" }}>
         <Col>
-          <img src={weHeartNDIS2020v3} style={{ padding: "0.5em" }} />
+          <img
+            src={weHeartNDIS2020v3}
+            alt="NDIS logo"
+            style={{ padding: "0.5em" }}
+          />
           <p>{props.ndisTag}</p>
         </Col>
       </Row>

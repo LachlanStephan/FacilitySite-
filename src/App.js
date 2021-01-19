@@ -5,7 +5,7 @@ import { Container } from "reactstrap";
 import Footer from "./components/common/Footer/footer";
 import Contact from "./components/Contact/contact";
 import ScrollToTop from "./components/common/ScrollToTop/ScrollToTop";
-import PDF_viewer from "./components/PDF-viewer/PDF-viewer";
+import PDF_viewer from "./components/PDF-viewer/PdfViewer";
 // import PDF from "./components/PDF-viewer/PDF";
 
 function App() {

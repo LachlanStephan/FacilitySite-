@@ -1,9 +1,9 @@
-import React, { Component, useRef } from "react";
+import React, { Component } from "react";
 import ReactToPrint from "react-to-print";
-import PDF from "./PDF";
+import Pdf from "./PDF";
 import { Container, Row, Col, Button } from "reactstrap";
 
-export default class PDF_toPrint extends Component {
+export default class PDF_print extends Component {
   render() {
     const pdfPageStyle = {
       minHeight: "100vh",
@@ -24,7 +24,7 @@ export default class PDF_toPrint extends Component {
               }}
               content={() => this.componentRef}
             />
-            <PDF ref={(el) => (this.componentRef = el)} />
+            <Pdf ref={(el) => (this.componentRef = el)} />
           </Col>
         </Row>
       </Container>

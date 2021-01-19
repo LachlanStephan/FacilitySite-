@@ -1,7 +1,8 @@
 import React, { Component } from "react";
 import { Container, Row, Col } from "reactstrap";
 import { Button } from "reactstrap";
-import PDF_toPrint from "./PDF-toPrint";
+import PdfPrint from "./PdfPrint";
+import PdfPageContent from "./PdfPageContent";
 
 export default class PDF_viewer extends Component {
   state = {
@@ -28,7 +29,7 @@ export default class PDF_viewer extends Component {
             >
               {btnText}
             </Button>
-            {this.state.visible ? <PDF_toPrint /> : <Container>hi</Container>}
+            {this.state.visible ? <PdfPrint /> : <PdfPageContent />}
           </Col>
         </Row>
       </Container>
