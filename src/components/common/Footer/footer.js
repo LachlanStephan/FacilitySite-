@@ -15,6 +15,16 @@ const Footer = (props) => {
         </Col>
         <Col sm="12">
           <h6 style={{ color: "#a9a9a9", marginTop: "8px" }}>
+            <strong>{props.manager}</strong>
+          </h6>
+        </Col>
+        <Col sm="12">
+          <h6 style={{ color: "#a9a9a9", marginTop: "8px" }}>
+            <strong>{props.number}</strong>
+          </h6>
+        </Col>
+        <Col sm="12">
+          <h6 style={{ color: "#a9a9a9", marginTop: "8px" }}>
             <strong>{props.address}</strong>
           </h6>
         </Col>

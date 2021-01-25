@@ -20,9 +20,9 @@ const contact = (props) => {
   };
 
   const contactStyle = {
-    minHeight: "100vh",
-    paddingTop: "5em",
-    paddingBottom: "5em",
+    minHeight: "50vh",
+    paddingTop: "2em",
+    paddingBottom: "2em",
   };
 
   const inputStyle = {

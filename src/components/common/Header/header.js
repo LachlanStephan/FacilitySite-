@@ -24,7 +24,7 @@ const Header = (props) => {
 
   const toggle = () => setIsOpen(!isOpen);
   return (
-    <Container style={{ marginBottom: "5em", marginTop: "1em" }} id="header">
+    <Container style={{ marginTop: "1em" }} id="header">
       <Row>
         <Col>
           <Navbar color="" light expand="md" style={navStyle}>
@@ -40,12 +40,12 @@ const Header = (props) => {
               <Nav className="mr-auto" navbar>
                 <NavItem>
                   <NavLink href="#contact">
-                    <strong>Message us</strong>
+                    <strong>{props.link1}</strong>
                   </NavLink>
                 </NavItem>
                 <NavItem>
                   <NavLink href="#pdf">
-                    <strong>PDF</strong>
+                    <strong>{props.link2}</strong>
                   </NavLink>
                 </NavItem>
               </Nav>

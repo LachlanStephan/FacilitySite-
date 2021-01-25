@@ -4,16 +4,18 @@ import { Button } from "reactstrap";
 import PdfPrint from "./PdfPrint";
 import PdfPageContent from "./PdfPageContent";
 
-export default class PDF_viewer extends Component {
+export default class pdfViewer extends Component {
   state = {
     visible: false,
   };
 
   render() {
-    const btnText = this.state.visible ? "hide" : "show";
+    const btnText = this.state.visible
+      ? "Click to view our services"
+      : "Click to view and or print our intake sheet";
 
     return (
-      <Container id="pdf" style={{ minHeight: "100vh", paddingTop: "2em" }}>
+      <Container id="pdf" style={{ paddingTop: "2em" }}>
         <Row>
           <Col>
             <h1 id="blue">{this.props.title}</h1>
@@ -22,6 +24,7 @@ export default class PDF_viewer extends Component {
         <Row>
           <Col>
             <Button
+              color="link"
               style={{ margin: "1em" }}
               onClick={() => {
                 this.setState({ visible: !this.state.visible });
@@ -29,8 +32,10 @@ export default class PDF_viewer extends Component {
             >
               {btnText}
             </Button>
-            {this.state.visible ? <PdfPrint /> : <PdfPageContent />}
           </Col>
+        </Row>
+        <Row>
+          <Col>{this.state.visible ? <PdfPrint /> : <PdfPageContent />}</Col>
         </Row>
       </Container>
     );
