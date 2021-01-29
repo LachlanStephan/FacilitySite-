@@ -12,7 +12,7 @@ export default class pdfViewer extends Component {
   render() {
     const btnText = this.state.visible
       ? "Click to view our services"
-      : "Click to view and or print our intake sheet";
+      : "Click to view and or print our 'resident application form'";
 
     return (
       <Container id="pdf" style={{ paddingTop: "2em" }}>

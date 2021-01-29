@@ -1,7 +1,7 @@
 import React from "react";
 import { Container, Row, Col } from "reactstrap";
 import weHeartNDIS2020v3 from "../images/weHeartNDIS2020v3.jpg";
-// import tagRegisteredProviderv2 from "../images/tagRegisteredProviderv2.jpg";
+import CR_logo from "../images/CR_logo.png";
 
 const Footer = (props) => {
   return (
@@ -29,7 +29,12 @@ const Footer = (props) => {
           </h6>
         </Col>
       </Row>
-      <Row style={{ marginTop: "4em", marginBottom: "4em" }}>
+      <Row style={{ marginTop: "2em" }}>
+        <Col>
+          <img src={CR_logo} />
+        </Col>
+      </Row>
+      <Row style={{ marginTop: "2em", marginBottom: "4em" }}>
         <Col>
           <img
             src={weHeartNDIS2020v3}

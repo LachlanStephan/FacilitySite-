@@ -4,7 +4,7 @@ export default function emailError() {
   const email = document.getElementById("email");
   const emailError = document.getElementById("emailError");
 
-  if (email.value.includes("@")) {
+  if (email.value.includes("@" && ".com")) {
     emailError.style.display = "none";
   } else {
     emailError.style.display = "block";

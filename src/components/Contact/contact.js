@@ -15,7 +15,7 @@ const contact = (props) => {
   };
 
   const formStyle = {
-    padding: "2em",
+    paddingBottom: "2em",
     width: "100%",
   };
 
@@ -37,6 +37,17 @@ const contact = (props) => {
   return (
     <Container className="contactContainer" id="contact" style={contactStyle}>
       <h1 id="blue">{props.title}</h1>
+      <Row>
+        <Col>
+          <p>{props.text}</p>
+          <p>{props.text2}</p>
+        </Col>
+      </Row>
+      <Row>
+        <Col>
+          <h5 id="blue">{props.subTitle}</h5>
+        </Col>
+      </Row>
       <form style={formStyle} className="contactForm" onSubmit={sendEmail}>
         <fieldset>
           <Row>

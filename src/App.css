@@ -9,6 +9,7 @@
 #purple {
   color: #800879;
 }
+
 /* Back to top btn */
 #btn {
   display: none;
@@ -26,6 +27,27 @@
   opacity: 60%;
   width: 5em;
 }
+
+#btn:hover,
+#btn:focus {
+  background-color: #fed800;
+  transition: ease 0.5s;
+}
+
+.listContainer {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  grid-template-rows: 1fr;
+}
+
+.listTextContainer {
+  grid-column: 2 span 4;
+  text-align: left;
+}
+
+/* li {
+  padding-bottom: 0.2em;
+} */
 
 html {
   scroll-behavior: smooth;
