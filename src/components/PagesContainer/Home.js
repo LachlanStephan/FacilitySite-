@@ -5,7 +5,7 @@ const Home = (props) => {
   const homeStyle = {
     minHeight: "20vh",
     margin: "0",
-    marginBottom: "5em",
+    marginBottom: "2em",
     padding: "0",
   };
 

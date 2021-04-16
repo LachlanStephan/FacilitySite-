@@ -15,7 +15,7 @@ export default class pdfViewer extends Component {
       : "Click to view and or print our 'resident application form'";
 
     return (
-      <Container id="pdf" style={{ paddingTop: "2em" }}>
+      <Container id="pdf" style={{ marginBottom: "2em" }}>
         <Row>
           <Col>
             <h1 id="blue">{this.props.title}</h1>

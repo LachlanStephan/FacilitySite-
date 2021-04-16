@@ -4,8 +4,7 @@ import { Container, Row, Col, CardImg } from "reactstrap";
 const PagesContainer = (props) => {
   const PagesStyle = {
     minHeight: "50vh",
-    paddingTop: "2em",
-    paddingBottom: "2em",
+    marginBottom: "2em",
   };
 
   return (

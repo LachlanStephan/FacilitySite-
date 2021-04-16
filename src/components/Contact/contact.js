@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { Container, Row, Col } from "reactstrap";
 import sendEmail from "./sendEmail";
-import "./Contact.css";
 
 const Contact = (props) => {
   const formStyle = {
@@ -12,7 +11,7 @@ const Contact = (props) => {
   const contactStyle = {
     minHeight: "50vh",
     paddingTop: "2em",
-    paddingBottom: "2em",
+    marginBottom: "2em",
   };
 
   const inputStyle = {
@@ -133,7 +132,7 @@ const Contact = (props) => {
             </Col>
           </Row>
           <Row>
-            <Col id="purple">{nameErr}</Col>
+            <Col id="errRed">{nameErr}</Col>
           </Row>
           <Row>
             <Col>
@@ -151,7 +150,7 @@ const Contact = (props) => {
             </Col>
           </Row>
           <Row>
-            <Col id="purple">{surnameErr}</Col>
+            <Col id="errRed">{surnameErr}</Col>
           </Row>
           <Row>
             <Col>
@@ -169,7 +168,7 @@ const Contact = (props) => {
             </Col>
           </Row>
           <Row>
-            <Col id="purple">{messageErr}</Col>
+            <Col id="errRed">{messageErr}</Col>
           </Row>
           <Row>
             <Col>
@@ -187,7 +186,7 @@ const Contact = (props) => {
             </Col>
           </Row>
           <Row>
-            <Col id="purple">{emailErr}</Col>
+            <Col id="errRed">{emailErr}</Col>
           </Row>
           <Row>
             <Col>
@@ -205,7 +204,7 @@ const Contact = (props) => {
             </Col>
           </Row>
           <Row>
-            <Col id="purple">{numberErr}</Col>
+            <Col id="errRed">{numberErr}</Col>
           </Row>
           <Row>
             <Col>
@@ -214,6 +213,7 @@ const Contact = (props) => {
                 type="submit"
                 value="Submit"
                 style={inputStyle}
+                id="formSubmit"
               />
             </Col>
           </Row>
