@@ -13,7 +13,6 @@ import {
   Col,
 } from "reactstrap";
 import CR_logo from "../images/CR_logo.png";
-import weHeartNDIS2020 from "../images/weHeartNDIS2020v3.jpg";
 
 const Header = (props) => {
   const navStyle = {

@@ -1,13 +1,23 @@
 import { Container, Row, Col, CardImg } from "reactstrap";
-import FakePageImg from "../common/images/FakePageImg.jpg";
-import { List } from "reactstrap";
 import ArrowRight from "../common/images/ArrowRight.png";
+import RBHW from "../common/images/RBWH.jpg";
 
 const PdfPageContent = () => {
   return (
     <Container style={{ minHeight: "40vh", marginBottom: "1em" }}>
       <Row>
         <Col sm="12" lg="6" style={{ marginTop: "0.5em" }}>
+          <div className="listContainer">
+            <div>
+              <img src={ArrowRight} />
+            </div>
+            <div style={{ textAlign: "left" }}>
+              <p>
+                Closest Level 3 Supported Accomodation to the Royal Brisbane
+                Hospital
+              </p>
+            </div>
+          </div>{" "}
           <div className="listContainer">
             <div>
               <img src={ArrowRight} />
@@ -106,7 +116,7 @@ const PdfPageContent = () => {
           </div>
         </Col>
         <Col sm="12" lg="6" style={{ marginTop: "1em" }}>
-          <CardImg src={FakePageImg} />
+          <CardImg src={RBHW} alt="Picture of Royal Brisbane Hospital" />
         </Col>
       </Row>
     </Container>

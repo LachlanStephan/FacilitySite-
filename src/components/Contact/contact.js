@@ -1,19 +1,9 @@
-import React from "react";
+import React, { useState } from "react";
 import { Container, Row, Col } from "reactstrap";
 import sendEmail from "./sendEmail";
-import nameError from "../errorFunctions/nameError";
-import surnameError from "../errorFunctions/surnameError";
-import messageError from "../errorFunctions/messageError";
-import emailError from "../errorFunctions/emailError";
-import numberError from "../errorFunctions/numberError";
 import "./Contact.css";
 
-const contact = (props) => {
-  const errorStyle = {
-    display: "none",
-    color: "red",
-  };
-
+const Contact = (props) => {
   const formStyle = {
     paddingBottom: "2em",
     width: "100%",
@@ -33,6 +23,83 @@ const contact = (props) => {
     textAlign: "center",
     borderRadius: "5px",
   };
+
+  // default state for input
+  const [name, setName] = useState("");
+  const [surname, setSurname] = useState("");
+  const [message, setMessage] = useState("");
+  const [email, setEmail] = useState("");
+  const [number, setNumber] = useState("");
+
+  // error messages
+  const [nameErr, setNameErr] = useState("");
+  const [surnameErr, setSurnameErr] = useState("");
+  const [messageErr, setMessageErr] = useState("");
+  const [emailErr, setEmailErr] = useState("");
+  const [numberErr, setNumberErr] = useState("");
+
+  // Validate name
+  const valName = () => {
+    if (name.length < 1) {
+      setNameErr("Please enter your name");
+    } else {
+      setNameErr("");
+    }
+  };
+
+  //Validate surname
+  const valSurname = () => {
+    if (surname.length < 1) {
+      setSurnameErr("Please enter your surname");
+    } else {
+      setSurnameErr("");
+    }
+  };
+
+  // Validate message
+  const valMessage = () => {
+    if (message.length < 5) {
+      setMessageErr("Please leave us a message");
+    } else {
+      setMessageErr("");
+    }
+  };
+
+  // Validate email
+  const valEmail = () => {
+    if (!email.includes("@") && !email.includes(".com")) {
+      setEmailErr("Please enter a valid email");
+    } else {
+      setEmailErr("");
+    }
+  };
+
+  // Validate number
+  const valNumber = () => {
+    if (number.length < 9 || number.length > 13) {
+      setNumberErr("Please enter a valid number");
+    } else {
+      setNumberErr("");
+    }
+  };
+
+  // conditionally set status of button
+  const allowSubmit = () => {
+    if (
+      name.length < 1 ||
+      surname.length < 1 ||
+      message.length < 3 ||
+      !email.includes("@" && ".com") ||
+      number.length < 9 ||
+      number.length > 13
+    ) {
+      return true;
+    } else {
+      return false;
+    }
+  };
+
+  const statusCheck = allowSubmit();
 
   return (
     <Container className="contactContainer" id="contact" style={contactStyle}>
@@ -57,18 +124,16 @@ const contact = (props) => {
                 name="name"
                 placeholder="First name"
                 required={true}
-                onBlur={nameError}
+                value={name}
+                onChange={(e) => setName(e.target.value)}
+                onBlur={valName}
                 id="name"
                 style={inputStyle}
               />
             </Col>
           </Row>
-          <Row className="errorCol">
-            <Col>
-              <p id="nameError" style={errorStyle}>
-                Please enter your first name
-              </p>
-            </Col>
+          <Row>
+            <Col id="purple">{nameErr}</Col>
           </Row>
           <Row>
             <Col>
@@ -77,18 +142,16 @@ const contact = (props) => {
                 name="surname"
                 placeholder="Surname"
                 required={true}
-                onBlur={surnameError}
+                value={surname}
+                onChange={(e) => setSurname(e.target.value)}
+                onBlur={valSurname}
                 id="surname"
                 style={inputStyle}
               />
             </Col>
           </Row>
-          <Row className="errorCol">
-            <Col>
-              <p id="surnameError" style={errorStyle}>
-                Please enter your surname
-              </p>
-            </Col>
+          <Row>
+            <Col id="purple">{surnameErr}</Col>
           </Row>
           <Row>
             <Col>
@@ -98,17 +161,15 @@ const contact = (props) => {
                 name="message"
                 placeholder="Your message"
                 required={true}
-                onBlur={messageError}
+                value={message}
+                onChange={(e) => setMessage(e.target.value)}
+                onBlur={valMessage}
                 style={inputStyle}
               />
             </Col>
           </Row>
-          <Row className="errorCol">
-            <Col>
-              <p id="msgError" style={errorStyle}>
-                Please leave a message
-              </p>
-            </Col>
+          <Row>
+            <Col id="purple">{messageErr}</Col>
           </Row>
           <Row>
             <Col>
@@ -117,42 +178,43 @@ const contact = (props) => {
                 name="email"
                 placeholder="hello@gmail.com"
                 required={true}
-                onBlur={emailError}
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+                onBlur={valEmail}
                 id="email"
                 style={inputStyle}
               />
             </Col>
           </Row>
-          <Row className="errorCol">
-            <Col>
-              <p id="emailError" style={errorStyle}>
-                Please enter a valid email
-              </p>
-            </Col>
+          <Row>
+            <Col id="purple">{emailErr}</Col>
           </Row>
           <Row>
             <Col>
               <input
-                type="tel"
+                type="text"
                 name="number"
                 placeholder="0123 456 789"
                 required={true}
-                onBlur={numberError}
+                value={number}
+                onChange={(e) => setNumber(e.target.value)}
+                onBlur={valNumber}
                 id="number"
                 style={inputStyle}
               />
             </Col>
           </Row>
-          <Row className="errorCol">
-            <Col>
-              <p id="numberError" style={errorStyle}>
-                Please enter a valid number
-              </p>
-            </Col>
+          <Row>
+            <Col id="purple">{numberErr}</Col>
           </Row>
           <Row>
             <Col>
-              <input type="submit" value="Submit" style={inputStyle} />
+              <input
+                disabled={statusCheck}
+                type="submit"
+                value="Submit"
+                style={inputStyle}
+              />
             </Col>
           </Row>
         </fieldset>
@@ -161,4 +223,4 @@ const contact = (props) => {
   );
 };
 
-export default contact;
+export default Contact;

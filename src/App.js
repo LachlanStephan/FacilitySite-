@@ -7,26 +7,24 @@ import Contact from "./components/Contact/contact";
 import ScrollToTop from "./components/common/ScrollToTop/ScrollToTop";
 import PdfViewer from "./components/PdfViewer/PdfViewer";
 import Home from "./components/PagesContainer/Home";
-import FakeHomeImg from "./components/common/images/FakeHomeImg.jpg";
-import FakePageImg from "./components/common/images/FakePageImg.jpg";
 import weHeartNDIS2020V3 from "./components/common/images/weHeartNDIS2020v3.jpg";
 import ArrowRight from "./components/common/images/ArrowRight.png";
+import homePageImg from "./components/common/images/homePageImg.jpg";
+import personImg from "./components/common/images/person.jpg";
+import wheelchairImg from "./components/common/images/wheelchair2.jpg";
 
 function App() {
   return (
     <Container fluid={true} className="App">
       <Header link1="Contact us" link2="Resident Application Form" />
 
-      <Home title="Herston Lodge" img={FakeHomeImg} />
+      <Home title="Herston Lodge" img={homePageImg} alt="bird in a tree" />
       <PagesContainer
         title="Why choose Herston Lodge?"
         content="Herston Lodge is the closest Level 3 Supported Accomodation to the Royal Brisbane Hospital and located on a large, spacious block with BBQ and grassed areas to the rear, backing on to Rasey Park for a beautiful parkland outlook"
-        img={FakePageImg}
-        arrow1={ArrowRight}
-        arrow2={ArrowRight}
-        arrow3={ArrowRight}
-        arrow4={ArrowRight}
-        arrow5={ArrowRight}
+        img={personImg}
+        alt="Man smiling"
+        arrow={ArrowRight}
         listItem1="Excellent transport"
         listItem2="Four Star Eat Safe Brisbane safety rating - wholesome, nutritious meals produced everyday"
         listItem3="Excellent staff that provide constant support and ecouragment to residents"
@@ -37,14 +35,13 @@ function App() {
       <PagesContainer
         title="CareRITE Herston Lodge - NDIS"
         NDISimg={weHeartNDIS2020V3}
+        ndisAlt="NDIS logo"
         content="CareRITE Herston Lodge is a Registered Supported Residential Services provider and National Disability Insurance Shceme (NDIS) provider that has been established in to provide Supported Accomodation services to people in South East Queensland. Based in Herston, Queensland, CareRITE Herston Lodge provides 24-hour support services to its residetns. In addition to their Supported Accomodation services, CareRITE Herston Lodge provides supports to people across the community sector"
-        img={FakePageImg}
-        arrow1={ArrowRight}
+        img={wheelchairImg}
+        alt="Man in wheelchair"
+        ArrowAlt="Arrow icon"
+        arrow={ArrowRight}
         arrow2={ArrowRight}
-        arrow3={ArrowRight}
-        arrow4={ArrowRight}
-        arrow5={ArrowRight}
-        arrow6={ArrowRight}
         text="CareRITE Herston Lodge provides the following NDIS Supports in accordance to the NDIS scheme to eligible participants"
         listItem1="Assistance with Daily Life Tasks in a Group or Shared Living Arrangement"
         listItem2="Community Participation, including Group and Centre Based Activities"

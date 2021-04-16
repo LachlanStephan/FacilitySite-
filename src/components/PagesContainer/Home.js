@@ -17,7 +17,7 @@ const Home = (props) => {
         </Col>
       </Row>
       <Row id="imgRow" style={{ marginTop: "1em" }}>
-        <CardImg src={props.img} />
+        <CardImg src={props.img} alt={props.alt} />
       </Row>
     </Container>
   );

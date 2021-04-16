@@ -31,7 +31,9 @@ const Footer = (props) => {
       </Row>
       <Row style={{ marginTop: "2em" }}>
         <Col>
-          <img src={CR_logo} />
+          <a href="/">
+            <img src={CR_logo} />
+          </a>
         </Col>
       </Row>
       <Row style={{ marginTop: "2em", marginBottom: "4em" }}>

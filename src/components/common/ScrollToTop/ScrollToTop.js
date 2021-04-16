@@ -1,4 +1,4 @@
-import react, { useState } from "react";
+import { useState } from "react";
 import { Button } from "reactstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowAltCircleUp } from "@fortawesome/free-solid-svg-icons";
@@ -7,9 +7,9 @@ const ScrollToTop = () => {
   const [showScroll, setShowScroll] = useState(false);
 
   const checkScrollTop = () => {
-    if (!showScroll && window.pageYOffset > 100) {
+    if (!showScroll && window.pageYOffset > 500) {
       setShowScroll(true);
-    } else if (showScroll && window.pageYOffset <= 100) {
+    } else if (showScroll && window.pageYOffset <= 500) {
       setShowScroll(false);
     }
   };

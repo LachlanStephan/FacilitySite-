@@ -1,8 +1,5 @@
-import { faArrowAltCircleRight } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
 import { Container, Row, Col, CardImg } from "reactstrap";
-import { List } from "reactstrap";
 
 const PagesContainer = (props) => {
   const PagesStyle = {
@@ -20,7 +17,7 @@ const PagesContainer = (props) => {
       </Row>
       <Row>
         <Col>
-          <img src={props.NDISimg} />
+          <img src={props.NDISimg} alt={props.ndisAlt} />
         </Col>
       </Row>
       <Row style={{ marginBottom: "2em" }}>
@@ -30,13 +27,13 @@ const PagesContainer = (props) => {
       </Row>
       <Row style={{ marginTop: "1em" }}>
         <Col sm="12" lg="6" style={{ marginBottom: "2em" }}>
-          <CardImg src={props.img} />
+          <CardImg src={props.img} alt={props.alt} />
         </Col>
         <Col sm="12" lg="6">
           <p style={{ textAlign: "left", fontSize: "20px" }}>{props.text}</p>
           <div className="listContainer">
             <div>
-              <img src={props.arrow1} />
+              <img src={props.arrow} alt={props.ArrowAlt} />
             </div>
             <div style={{ textAlign: "left" }}>
               <p>{props.listItem1}</p>
@@ -44,7 +41,7 @@ const PagesContainer = (props) => {
           </div>{" "}
           <div className="listContainer">
             <div>
-              <img src={props.arrow2} />
+              <img src={props.arrow} alt={props.ArrowAlt} />
             </div>
             <div style={{ textAlign: "left" }}>
               <p>{props.listItem2}</p>
@@ -52,7 +49,7 @@ const PagesContainer = (props) => {
           </div>{" "}
           <div className="listContainer">
             <div>
-              <img src={props.arrow3} />
+              <img src={props.arrow} alt={props.ArrowAlt} />
             </div>
             <div style={{ textAlign: "left" }}>
               <p>{props.listItem3}</p>
@@ -60,7 +57,7 @@ const PagesContainer = (props) => {
           </div>{" "}
           <div className="listContainer">
             <div>
-              <img src={props.arrow4} />
+              <img src={props.arrow} alt={props.ArrowAlt} />
             </div>
             <div style={{ textAlign: "left" }}>
               <p>{props.listItem4}</p>
@@ -68,7 +65,7 @@ const PagesContainer = (props) => {
           </div>{" "}
           <div className="listContainer">
             <div>
-              <img src={props.arrow5} />
+              <img src={props.arrow} alt={props.ArrowAlt} />
             </div>
             <div style={{ textAlign: "left" }}>
               <p>{props.listItem5}</p>
@@ -76,44 +73,15 @@ const PagesContainer = (props) => {
           </div>{" "}
           <div className="listContainer">
             <div>
-              <img src={props.arrow6} />
+              <img src={props.arrow2} alt={props.ArrowAlt} />
             </div>
             <div style={{ textAlign: "left" }}>
               <p>{props.listItem6}</p>
             </div>
           </div>
-          {/* <List type="unstyled" id="list" style={{ textAlign: "left" }}>
-            <Row>
-              <Col style={{ width: "1em" }}>
-                <img style={ImgStyle} src={props.arrow} />
-              </Col>
-              <Col>{props.listItem1}</Col>
-            </Row>
-            <Row>
-              <Col>
-                <img style={ImgStyle} src={props.arrow} />
-                {props.listItem2}
-              </Col>
-            </Row>{" "}
-            <Row>
-              <Col>
-                <img style={ImgStyle} src={props.arrow} />
-                {props.listItem3}
-              </Col>
-            </Row>{" "}
-            <Row>
-              <Col>
-                <img style={ImgStyle} src={props.arrow} />
-                {props.listItem4}
-              </Col>
-            </Row>{" "}
-            <Row>
-              <Col>
-                <img style={ImgStyle} src={props.arrow} />
-                {props.listItem5}
-              </Col>
-            </Row>
-          </List> */}
+          <div style={{ textAlign: "left" }}>
+            <p>{props.listItem7}</p>
+          </div>
           <p style={{ textAlign: "left" }}>{props.lowerText}</p>
         </Col>
       </Row>
