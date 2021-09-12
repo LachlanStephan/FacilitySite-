@@ -75,7 +75,7 @@ const Contact = (props) => {
 
 	// Validate number
 	const valNumber = () => {
-		if (number.length < 9 || number.length > 13) {
+		if (number.length <= 9 || number.length >= 13) {
 			setNumberErr("Please enter a valid number");
 		} else {
 			setNumberErr("");
@@ -89,8 +89,8 @@ const Contact = (props) => {
 			surname.length < 1 ||
 			message.length < 3 ||
 			!email.includes("@" && ".com") ||
-			number.length < 9 ||
-			number.length > 13
+			number.length <= 9 ||
+			number.length >= 13
 		) {
 			return true;
 		} else {
