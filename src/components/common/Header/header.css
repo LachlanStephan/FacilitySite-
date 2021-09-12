@@ -1,7 +1,7 @@
 #navToggle:active {
-  box-shadow: 2px 2px #ccc;
-  transition: 0.3s ease;
+	box-shadow: 2px 2px #ccc;
+	transition: 0.3s ease;
 }
 #navToggle {
-  outline: none;
+	outline: none;
 }

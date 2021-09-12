@@ -1,73 +1,73 @@
 .App {
-  text-align: center;
+	text-align: center;
 }
 
 #blue {
-  color: #067ed7;
+	color: #067ed7;
 }
 
 #purple {
-  color: #800879;
+	color: #800879;
 }
 
 #yellow {
-  color: #fed800;
+	color: #fed800;
 }
 
 #errRed {
-  color: rgb(235, 114, 134);
+	color: rgb(235, 114, 134);
 }
 
 /* Back to top btn */
 #btn {
-  display: none;
-  justify-content: center;
-  position: fixed;
-  bottom: 20px;
-  right: 30px;
-  z-index: 99;
-  border: none;
-  outline: none;
-  cursor: pointer;
-  padding: 10px;
-  border-radius: 10px;
-  font-size: 13px;
-  /* opacity: 60%; */
-  width: 5em;
+	display: none;
+	justify-content: center;
+	position: fixed;
+	bottom: 20px;
+	right: 30px;
+	z-index: 99;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	padding: 10px;
+	border-radius: 10px;
+	font-size: 13px;
+	/* opacity: 60%; */
+	width: 5em;
 }
 
 #btn:hover,
 #btn:focus {
-  background-color: #fed800;
-  transition: ease 0.3s;
+	background-color: #fed800;
+	transition: ease 0.3s;
 }
 
 .listContainer {
-  display: grid;
-  grid-template-columns: 1fr 4fr;
-  grid-template-rows: 1fr;
+	display: grid;
+	grid-template-columns: 1fr 4fr;
+	grid-template-rows: 1fr;
 }
 
 .listTextContainer {
-  grid-column: 2 span 4;
-  text-align: left;
+	grid-column: 2 span 4;
+	text-align: left;
 }
 
 #formSubmit:hover {
-  background-color: #fed800;
-  transition: ease 0.3s;
+	background-color: #fed800;
+	transition: ease 0.3s;
 }
 
 html {
-  scroll-behavior: smooth;
-  overflow-y: scroll;
+	scroll-behavior: smooth;
+	overflow-y: scroll;
 }
 
 ::-webkit-scrollbar {
-  -webkit-appearance: none;
-  width: 0.5em;
+	-webkit-appearance: none;
+	width: 0.5em;
 }
 ::-webkit-scrollbar-thumb {
-  border-radius: 4px;
-  background-color: #067ed7;
+	border-radius: 4px;
+	background-color: #067ed7;
 }
